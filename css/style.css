@@ -10,10 +10,6 @@ body {
     margin: 0px auto;
     background: #ecf0ee;
 }
-header {
-    height : 90px;
-    width:1080px;
-}
 
 header , section.main , footer {
     margin:0px auto;
@@ -22,6 +18,13 @@ header , section.main , footer {
     box-sizing:border-box;
     margin-bottom: 10px;
 }
+
+header {
+    height : 90px;
+    width:1080px;
+    margin-top: 10px;
+}
+
 header ul {
     float:right;
 }
@@ -29,6 +32,17 @@ header ul {
 header ul li {
     display :inline-block;
     margin-right:10px;
+    width: 136px;
+    background-color: #8cbbc6;
+    color: #fff;
+    /* padding: 10px; */
+    text-align: center;
+    box-shadow: 1px 2px 7px 1px grey;
+}
+
+header ul li a {
+	display: block;
+	padding: 10px;
 }
 
 /* section.main */
@@ -36,23 +50,29 @@ header ul li {
 section.main {
     text-align:center;
 }
+
+section.main > * {
+	margin-bottom : 20px;
+}
 section.main > h1 {
     font-size:2em;
+    margin-top : 20px;
 }
 
 section.main .feature {
     overflow: auto;
-    margin : 0px auto;
-    width : 380px;
-    height: 150px;
+    margin: 20px auto;
+    width: 405px;
+    height: 120px;
 }
 section.main .feature li {
     width:120px;
     height:120px;
     background-color: #8cbbc6;
     float:left;
-    margin-right:5px;
-    box-shadow: 3px 4px 7px 1px grey;
+    margin-right: 15px;
+    box-shadow: 1px 2px 7px 1px grey;
+    /* cursor: pointer; */
 }
 
 section.main .feature li  a {
@@ -60,15 +80,26 @@ section.main .feature li  a {
     font-size:1.4em;
     word-break:break-word;
     position: relative;
-    top: 33%;
+    top: 50%;
     transform:    translateY(-50%);
-    /* box-shadow: 2px 2px; */
+    display: block;
+}
+
+section.main .feature li  a:hover{
+	color:#fca;
 }
 
 section.main .map-wrap {
-    margin-top:30px;
+    /* margin-top:30px; */
     clear:both;
+    margin-bottom: 20px;
 }
 section.main img {
 	width: 800px;
+	outline: 1px solid #e8dfdf;
+}
+
+footer ul {
+	text-align: center;
+	color: #8d9ca6;
 }
