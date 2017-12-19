@@ -47,6 +47,7 @@ header ul li a {
 
 section.main {
     text-align:center;
+    position: relative;
 }
 
 section.main > * {
