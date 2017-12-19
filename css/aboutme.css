@@ -4,6 +4,10 @@ section.main > ul {
     text-align:left;
 }
 
+.portfolio > li {
+    margin-bottom:10px;
+}
+
 section.main > ul > li:not(:last-child) {
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
