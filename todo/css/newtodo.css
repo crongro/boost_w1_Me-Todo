@@ -1,0 +1,62 @@
+form > div {
+	width: 500px;
+	margin: 0px auto 30px;
+	text-align: left;
+}
+
+input, textarea {
+	font-size: 1.3em;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+p.input-name {
+	margin-bottom: 5px;
+	color: #595e62;
+	font-size: 1.2em;
+}
+
+
+.inputwrap #title {
+	width : 500px
+}
+
+.priority-wrap label {
+	margin-right: 5%;
+}
+
+.btn-wrap {
+	text-align: right;
+	margin-top: 50px;
+}
+
+button {
+		width: 122px;
+		height: 40px;
+		font-size: 1em;
+		background-color: #22aded;
+		border-radius: 1;
+		color: #fff;
+}
+
+a.back {
+	float: left;
+	background: #fff;
+	color: #000;
+	border: 1px solid gray;
+	width: 122px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.2em;
+}
+
+button.back:link {
+	background-color: #fff;
+	color: #000;
+}
+
+button[type=submit] {
+	margin-right: 10px;
+}
+

@@ -1,0 +1,68 @@
+.newtodo-btn {
+	position: absolute;
+	top: 7%;
+	right: 2%;
+}
+
+.newtodo-btn a {
+	cursor: pointer;
+}
+
+.newtodo-btn  button {
+		width: 200px;
+		height: 40px;
+		font-size: 1em;
+		background-color: #22aded;
+		border-radius: 1;
+		color: #fff;
+}
+
+section.listwrap {
+	overflow: hidden;
+	width: 90%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.listwrap > ul {
+	float :left;
+	width: 32.33%;
+}
+
+.listwrap > ul:not(:last-child) {
+	margin-right: 10px;
+}
+
+.listwrap > ul > li {
+	margin-bottom: 10px;
+	background-color: #cee4ef;
+	padding: 20px;
+	text-align: left;
+}
+
+.listwrap > ul > li.heading {
+	font-size: 1.5em;
+	font-weight: bold;
+	background: #345462;
+	color: #fff!important;
+}
+
+.listwrap > ul > li > h3.title {
+	margin-bottom: 10px;
+}
+
+.listwrap > ul > li > .sub-desc {
+    color: #355361;
+    font-size: 0.9em;
+}
+
+section.msg {
+    position: absolute;
+    top: 59px;
+    left: 8px;
+    font-weight: bold;
+    color: #406274;
+    transform: rotate(-33deg);
+    font-size: 2em;
+}
+   
