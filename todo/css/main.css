@@ -38,6 +38,7 @@ section.listwrap {
 	background-color: #cee4ef;
 	padding: 20px;
 	text-align: left;
+	position: relative;
 }
 
 .listwrap > ul > li.heading {
@@ -54,6 +55,19 @@ section.listwrap {
 .listwrap > ul > li > .sub-desc {
     color: #355361;
     font-size: 0.9em;
+}
+
+.listwrap > ul > li > button {
+    position: absolute;
+    top: 52px;
+    right: 8px;
+    width: 30px;
+    cursor: pointer;
+    height: 25px;
+}
+
+ul.done li button {
+    display: none;
 }
 
 section.msg {
