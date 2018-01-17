@@ -1,4 +1,4 @@
-
+(function() {
 function sendAjax(url, oData, reqListener) {
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener.bind(oReq));
@@ -8,21 +8,16 @@ function sendAjax(url, oData, reqListener) {
 }
 
 //title=xxx&owner=xxxx&priority=2순위&regdate=20180116
-function addTodoHtml() {
+function addTodoHtml(template) {
     var urlParams = new URLSearchParams(window.location.search);
 
     if(!urlParams.has("title")) return false;
     var title = urlParams.get('title');
     var owner= urlParams.get('owner');
     var priority = urlParams.get('priority').substring(0,1);
-    var regdate = urlParams.get('regdate');
-
-    var template = '<li data-id="4"><h3 class="title">{{title}}</h3><div class="sub-desc">등록날짜:regdate, {{owner}}, 우선순위 {{priority}}</div><button>&#8594;</button></li>';
 
     var html = template.
-            replace(/{{title}}/, title).
-            replace(/{{owner}}/, owner).
-            replace(/{{priority}}/, priority).
+            replace(/{{title}}/, title).replace(/{{owner}}/, owner).replace(/{{priority}}/, priority).
             replace(/{{regdate}}/, regdate);
             document.querySelector(".todo").insertAdjacentHTML("beforeend", html);
 }
@@ -49,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     });
 
-    addTodoHtml();
-
+    var TODOTemplate = '<li data-id="4"><h3 class="title">{{title}}</h3><div class="sub-desc">등록날짜:regdate, {{owner}}, 우선순위 {{priority}}</div><button>&#8594;</button></li>';
+    addTodoHtml(TODOTemplate);
 });
+)();
