@@ -13,7 +13,7 @@
     <section class="main">
         <h1>할일 등록</h1> 
         <section class="inputwrap">
-            <form action="">
+            <form action="/main.html">
 
                 <div>
                     <p class="input-name">어떤일인가요?</p>
@@ -58,7 +58,7 @@
 
            if( d < 10 ) { d='0'+d }
            if( m < 10) { m='0'+m }
-           today = y+""+m+""+d;
+           today = y+"."+m+"."+d;
            document.getElementsByName("regdate")[0].value = today;
         });
     </script>
