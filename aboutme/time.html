@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            .currentTime {
+                font-size:4em;
+                margin:200px auto;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="currentTime"></div>
+    </body>
+    <script>
+        const ct = document.querySelector(".currentTime");
+        function timer() {
+            setTimeout(function () {
+                const d = new Date();
+                ct.innerHTML = `현재시간 : ${d.getFullYear()}/${d.getMonth()}/${d.getDay()} ${d.getHours()}:${d.getMinutes()}`;
+                timer();
+            },1000)
+        }
+        timer();
+    </script>
+</html>
