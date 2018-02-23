@@ -1,6 +1,10 @@
 <html>
     <head>
         <style>
+            .navtohome {
+                margin: 30px;
+                font-size: 2em;
+            }
             .currentTime {
                 font-size:4em;
                 margin:200px auto;
@@ -10,6 +14,7 @@
         </style>
     </head>
     <body>
+        <div class="navtohome"><a href="./index.html">메인화면</a></div>
         <div class="currentTime"></div>
     </body>
     <script>
@@ -17,7 +22,9 @@
         function timer() {
             setTimeout(function () {
                 const d = new Date();
-                ct.innerHTML = `현재시간 : ${d.getFullYear()}/${d.getMonth()}/${d.getDay()} ${d.getHours()}:${d.getMinutes()}`;
+                let minutes = d.getMinutes();
+                if((minutes+"").length  === 1) minutes = "0"+minutes;
+                ct.innerHTML = `현재시간 : ${d.getFullYear()}/${d.getMonth()}/${d.getDay()} ${d.getHours()}:${minutes}`;
                 timer();
             },1000)
         }
